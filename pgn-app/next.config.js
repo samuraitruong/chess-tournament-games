@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  output: "export",
+};
 
-module.exports = nextConfig
+if (process.env.NEXT_PUBLIC_BASE_PATH) {
+  nextConfig.basePath = process.env.NEXT_PUBLIC_BASE_PATH;
+}
+
+module.exports = nextConfig;
