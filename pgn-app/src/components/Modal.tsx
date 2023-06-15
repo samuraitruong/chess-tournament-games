@@ -1,4 +1,6 @@
 import React from "react";
+import axios from "axios";
+
 export interface DownloadModalProps {
   value: string;
   show: boolean;
@@ -24,6 +26,16 @@ const DownloadModal = ({
     URL.revokeObjectURL(url);
   };
 
+  const syncData = () => {
+    // TODO: sync data to github
+    axios.post(process.env.NEXT_PUBLIC_COMMIT_API_URL || "", {
+      repoOwner: "samuraitruong",
+      repoName: "chess-tournament-games",
+      filePath: "tournaments/" + fileName,
+      commitMessage: "Pgn file commit from pgn-editor",
+      content: value,
+    });
+  };
   const handleOnClick = (action: "save" | "cancel") => {
     if (onAction) {
       onAction(action);
@@ -50,6 +62,13 @@ const DownloadModal = ({
             onClick={handleDownload}
           >
             Download
+          </button>
+
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded-md ml-2"
+            onClick={syncData}
+          >
+            Sync
           </button>
         </div>
       </div>

@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - main
-    # paths:
-    #   - pgn-app
-    #   - .github/workflows
+    paths:
+      - pgn-app
+      - .github/workflows
 env:
   NEXT_PUBLIC_BASE_PATH: "/chess-tournament-games"
+  NEXT_PUBLIC_COMMIT_API_URL: "https://github-committer-api.fly.dev/commit"
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

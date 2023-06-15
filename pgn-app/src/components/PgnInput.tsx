@@ -137,13 +137,13 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
   };
   return (
     <div>
-      <h2>PGN Attributes</h2>
+      <h2>Game Information</h2>
       <div className="space-y-2">
         {pgnAttributes.map((attribute, index) => (
-          <div key={index} className="flex">
+          <div key={index} className="flex full-w">
             <input
               type="text"
-              className={`border border-gray-300 rounded-md p-1 w-48 ${
+              className={`border border-gray-300 rounded-md p-1 w-40 ${
                 attribute.lock ? "disabled" : ""
               }`}
               disabled={attribute.lock}
@@ -163,7 +163,7 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
         </button>
       </div>
 
-      <h2>PGN Moves</h2>
+      <h2>Moves</h2>
       <div className="mt-2">
         <button onClick={handleToggleGridMode} className="mb-2">
           {isGridMode ? "Switch to Raw Mode" : "Switch to Grid Mode"}
