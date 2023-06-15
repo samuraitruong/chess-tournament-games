@@ -131,6 +131,10 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
     }
   };
 
+  const clearAllHandle = () => {
+    setMoves(Array(20).fill({ w: "", b: "" }));
+    if (onMoveChange) onMoveChange([]);
+  };
   return (
     <div>
       <h2>PGN Attributes</h2>
@@ -208,6 +212,13 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
             onClick={savePgn}
           >
             Save
+          </button>
+
+          <button
+            className="px-4 py-2 bg-green-500 text-white rounded"
+            onClick={clearAllHandle}
+          >
+            Clear
           </button>
         </div>
       </div>
