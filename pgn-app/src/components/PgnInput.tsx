@@ -1,12 +1,17 @@
 "use client";
 import React, { ChangeEvent, useRef, useState } from "react";
 import { MoveRow } from "./MoveRow";
+import styled from "styled-components";
+
+const MoveGrid = styled.div`
+  grid-template-rows: repeat(2, 32px);
+`;
 
 export interface PgnInputProps {
-  onPgnChange?: (pgn: string) => void;
+  onMoveChange?: (listMoves: string[]) => void;
 }
 
-const PgnInput = ({ onPgnChange }: PgnInputProps) => {
+const PgnInput = ({ onMoveChange }: PgnInputProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [pgnAttributes, setPgnAttributes] = useState([
     { label: "Event", value: "", lock: true },
@@ -20,7 +25,7 @@ const PgnInput = ({ onPgnChange }: PgnInputProps) => {
     { label: "TimeControl", value: "", lock: true },
   ]);
 
-  const [moves, setMoves] = useState(Array(15).fill({ w: "", b: "" }));
+  const [moves, setMoves] = useState(Array(20).fill({ w: "", b: "" }));
   const [isGridMode, setGridMode] = useState(true);
 
   const handleAddAttribute = () => {
@@ -61,6 +66,20 @@ const PgnInput = ({ onPgnChange }: PgnInputProps) => {
         ...updatedMoves[index],
         [color]: value,
       };
+      if (onMoveChange) {
+        const listMoves = [];
+        for (const x of updatedMoves) {
+          if (!x.w) {
+            break;
+          }
+          listMoves.push(x.w);
+          if (!x.b) {
+            break;
+          }
+          listMoves.push(x.b);
+        }
+        onMoveChange(listMoves);
+      }
       return updatedMoves;
     });
   };
@@ -72,6 +91,12 @@ const PgnInput = ({ onPgnChange }: PgnInputProps) => {
   const savePgn = () => {
     console.log(pgnAttributes);
     console.log(moves);
+  };
+
+  const handleTabEvent = (index: number) => {
+    if (index === moves.length) {
+      setMoves([...moves, { w: "", b: "" }]);
+    }
   };
 
   return (
@@ -108,19 +133,20 @@ const PgnInput = ({ onPgnChange }: PgnInputProps) => {
           {isGridMode ? "Switch to Raw Mode" : "Switch to Grid Mode"}
         </button>
         {isGridMode ? (
-          <div
-            className="grid grid-cols-1 gap-1 h-500px overflow-y-auto"
+          <MoveGrid
+            className="grid grid-cols-2 gap-1 h-500px overflow-y-auto"
             ref={ref}
           >
             {moves.map((move, index) => (
               <MoveRow
+                onTabPress={handleTabEvent}
                 key={index}
                 index={index}
                 move={move}
                 onChange={handleMoveChange}
               />
             ))}
-          </div>
+          </MoveGrid>
         ) : (
           <textarea
             className="border border-gray-300 rounded-md p-2 w-full h-500px resize-none"
