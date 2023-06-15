@@ -2,7 +2,9 @@ import { ChangeEvent } from "react";
 
 export interface Move {
   w: string;
+  wStatus?: boolean;
   b: string;
+  bStatus?: boolean;
 }
 
 export interface MoveRowProps {
@@ -29,19 +31,26 @@ export const MoveRow: React.FC<MoveRowProps> = ({
       onTabPress(index);
     }
   };
-
   return (
     <div className="flex">
       <div className="w-32px pr-1">{index + 1}.</div>
       <input
         type="text"
-        className="border border-gray-300 rounded-md p-1 flex-grow w-full"
+        className={`border rounded-md p-1 flex-grow w-full ${
+          move.wStatus === false && move.w
+            ? "border-red-500"
+            : "border-gray-300"
+        }`}
         value={move.w}
         onChange={(event) => handleMoveChange(event, "w")}
       />
       <input
         type="text"
-        className="border border-gray-300 rounded-md p-1 flex-grow w-full"
+        className={`border rounded-md p-1 flex-grow w-full ${
+          move.bStatus === false && move.b
+            ? "border-red-500"
+            : "border-gray-300"
+        }`}
         value={move.b}
         onChange={(event) => handleMoveChange(event, "b")}
         onKeyUp={(e) => handleKeyDown(e)}

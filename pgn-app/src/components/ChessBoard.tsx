@@ -10,7 +10,6 @@ export const ChessBoard = (props: ChessBoardProps) => {
   const [game, setGame] = useState(new Chess());
 
   useEffect(() => {
-    console.log("moves", props.moves);
     const newGame = new Chess();
 
     props.moves.forEach((move) => {

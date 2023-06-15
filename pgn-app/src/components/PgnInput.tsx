@@ -2,6 +2,8 @@
 import React, { ChangeEvent, useRef, useState } from "react";
 import { MoveRow } from "./MoveRow";
 import styled from "styled-components";
+import { validateMove } from "@/lib/Validator";
+import DownloadModal from "@/components/Modal";
 
 const MoveGrid = styled.div`
   grid-template-rows: repeat(2, 32px);
@@ -13,6 +15,9 @@ export interface PgnInputProps {
 
 const PgnInput = ({ onMoveChange }: PgnInputProps) => {
   const ref = useRef<HTMLDivElement>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [pgn, setPgn] = useState("");
+  const [fileName, setFileName] = useState("chess.pgn");
   const [pgnAttributes, setPgnAttributes] = useState([
     { label: "Event", value: "", lock: true },
     { label: "Site", value: "", lock: true },
@@ -60,25 +65,34 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
   };
 
   const handleMoveChange = (index: number, value: string, color: "w" | "b") => {
+    const status = color + "Status";
+    const validMoves: string[] = [];
+
+    for (const x of moves) {
+      if (!x.w || (x.wStatus === false && x.w)) {
+        break;
+      }
+      if (x.wStatus) {
+        validMoves.push(x.w);
+      }
+      if (!x.b || (x.bStatus === false && x.b)) {
+        break;
+      }
+      if (x.bStatus) validMoves.push(x.b);
+    }
+
+    const isValid = validateMove(validMoves, value);
+
     setMoves((prevMoves) => {
       const updatedMoves = [...prevMoves];
       updatedMoves[index] = {
         ...updatedMoves[index],
         [color]: value,
+        [status]: isValid !== undefined ? isValid : true,
       };
-      if (onMoveChange) {
-        const listMoves = [];
-        for (const x of updatedMoves) {
-          if (!x.w) {
-            break;
-          }
-          listMoves.push(x.w);
-          if (!x.b) {
-            break;
-          }
-          listMoves.push(x.b);
-        }
-        onMoveChange(listMoves);
+
+      if (onMoveChange && isValid) {
+        onMoveChange([...validMoves, value]);
       }
       return updatedMoves;
     });
@@ -89,8 +103,26 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
   };
 
   const savePgn = () => {
-    console.log(pgnAttributes);
-    console.log(moves);
+    setShowModal(true);
+
+    const contents = pgnAttributes.reduce((acc: string, curr: any) => {
+      if (curr.label && curr.value) {
+        return acc + `[${curr.label} "${curr.value}"]\n`;
+      }
+      return acc;
+    }, "");
+
+    const moveText = moves
+      .filter((x) => x.w)
+      .map((move, index) => `${index + 1}. ${move.w} ${move.b || ""}`)
+      .join("");
+
+    setPgn(contents + "\n" + moveText);
+    setFileName(
+      `${pgnAttributes.find((x) => x.label === "White")?.value} vs ${
+        pgnAttributes.find((x) => x.label === "Black")?.value
+      }.pgn`
+    );
   };
 
   const handleTabEvent = (index: number) => {
@@ -179,6 +211,12 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
           </button>
         </div>
       </div>
+      <DownloadModal
+        show={showModal}
+        value={pgn}
+        fileName={fileName}
+        onAction={() => setShowModal(false)}
+      />
     </div>
   );
 };
