@@ -34,7 +34,7 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
 
   const handleAttributeChange = (
     index: number,
-    event: React.ChangeEvent<HTMLInputElement>
+    event: ChangeEvent<HTMLInputElement>
   ) => {
     const updatedAttributes = [...pgnAttributes];
     updatedAttributes[index].value = event.target.value;
@@ -43,7 +43,7 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
 
   const handleUpdateAttributeName = (
     index: number,
-    event: React.ChangeEvent<HTMLInputElement>
+    event: ChangeEvent<HTMLInputElement>
   ) => {
     const updatedAttributes = [...pgnAttributes];
     updatedAttributes[index].label = event.target.value;
