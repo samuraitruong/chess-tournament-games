@@ -8,7 +8,7 @@ on:
     #   - pgn-app
     #   - .github/workflows
 env:
-  - NEXT_PUBLIC_BASE_PATH: chess-tournament-games
+  - NEXT_PUBLIC_BASE_PATH: "/chess-tournament-games"
 jobs:
   deploy:
     runs-on: ubuntu-latest
