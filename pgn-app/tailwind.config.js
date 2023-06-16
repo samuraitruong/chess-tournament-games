@@ -20,6 +20,9 @@ module.exports = {
         "32px": "32px",
         "40px": "40px",
       },
+      cursor: {
+        pointer: "pointer",
+      },
     },
   },
   plugins: [],

@@ -32,8 +32,8 @@ export const MoveRow: React.FC<MoveRowProps> = ({
     }
   };
   return (
-    <div className="flex">
-      <div className="w-32px pr-1">{index + 1}.</div>
+    <div className="flex w-full">
+      <div className="min-w-[26px] pr-1">{index + 1}.</div>
       <input
         type="text"
         className={`border rounded-md p-1 flex-grow w-full ${

@@ -1,13 +1,9 @@
 "use client";
 import React, { ChangeEvent, useRef, useState } from "react";
 import { MoveRow } from "./MoveRow";
-import styled from "styled-components";
 import { validateMove } from "@/lib/Validator";
 import DownloadModal from "@/components/Modal";
-
-const MoveGrid = styled.div`
-  grid-template-rows: repeat(2, 32px);
-`;
+import { parsePGN } from "@/lib/PgnParse";
 
 export interface PgnInputProps {
   onMoveChange?: (listMoves: string[]) => void;
@@ -30,7 +26,9 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
     { label: "TimeControl", value: "", lock: true },
   ]);
 
-  const [moves, setMoves] = useState(Array(20).fill({ w: "", b: "" }));
+  const [moves, setMoves] = useState(
+    Array(20).fill({ w: "", b: "", wf: "", bf: "" })
+  );
   const [isGridMode, setGridMode] = useState(true);
 
   const handleAddAttribute = () => {
@@ -66,6 +64,7 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
 
   const handleMoveChange = (index: number, value: string, color: "w" | "b") => {
     const status = color + "Status";
+    const fen = color + "f";
     const validMoves: string[] = [];
 
     for (const x of moves) {
@@ -81,17 +80,19 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
       if (x.bStatus) validMoves.push(x.b);
     }
 
-    const isValid = validateMove(validMoves, value);
+    const validMove: any = validateMove(validMoves, value);
+    console.log(validMove);
 
     setMoves((prevMoves) => {
       const updatedMoves = [...prevMoves];
       updatedMoves[index] = {
         ...updatedMoves[index],
         [color]: value,
-        [status]: isValid !== undefined ? isValid : true,
+        [fen]: validMove.after || "",
+        [status]: validMove.after ? true : false,
       };
 
-      if (onMoveChange && isValid) {
+      if (onMoveChange && validMove.after) {
         onMoveChange([...validMoves, value]);
       }
       return updatedMoves;
@@ -115,7 +116,7 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
     const moveText = moves
       .filter((x) => x.w)
       .map((move, index) => `${index + 1}. ${move.w} ${move.b || ""}`)
-      .join("");
+      .join(" ");
 
     setPgn(contents + "\n" + moveText);
     setFileName(
@@ -135,6 +136,41 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
     setMoves(Array(20).fill({ w: "", b: "" }));
     if (onMoveChange) onMoveChange([]);
   };
+
+  const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+    if (!event.target.files) return;
+
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = (e: any) => {
+      const contents = e.target.result;
+      const parsedPgn = parsePGN(contents);
+      const attributes = Object.entries(parsedPgn.attributes).map(
+        ([key, value]) => {
+          return {
+            label: key,
+            value,
+            lock: false,
+          };
+        }
+      );
+      const moveList = parsedPgn.moves.map(([w, b]) => ({
+        w,
+        b,
+      }));
+
+      setMoves(moveList);
+      setPgnAttributes(attributes);
+      if (onMoveChange) {
+        onMoveChange(parsedPgn.moves.flat());
+      }
+      console.log(contents, parsedPgn); // Do something with the file contents
+    };
+
+    reader.readAsText(file);
+  };
+
   return (
     <div>
       <h2>Game Information</h2>
@@ -158,19 +194,25 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
             />
           </div>
         ))}
-        <button onClick={handleAddAttribute} className="mt-2">
-          Add Attribute
-        </button>
+        <div className="flex justify-end">
+          <button
+            className="flex items-center space-x-1 text-sm text-white bg-blue-500 rounded-md px-2 py-1"
+            onClick={handleAddAttribute}
+          >
+            <span>+ More attribute</span>
+          </button>
+        </div>
       </div>
 
-      <h2>Moves</h2>
+      <hr className="border-t border-gray-400 my-4" />
+
       <div className="mt-2">
         <button onClick={handleToggleGridMode} className="mb-2">
           {isGridMode ? "Switch to Raw Mode" : "Switch to Grid Mode"}
         </button>
         {isGridMode ? (
-          <MoveGrid
-            className="grid grid-cols-2 gap-1 h-500px overflow-y-auto"
+          <div
+            className="flex flex-col gap-1 h-500px overflow-y-auto"
             ref={ref}
           >
             {moves.map((move, index) => (
@@ -182,7 +224,7 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
                 onChange={handleMoveChange}
               />
             ))}
-          </MoveGrid>
+          </div>
         ) : (
           <textarea
             className="border border-gray-300 rounded-md p-2 w-full h-500px resize-none"
@@ -220,6 +262,21 @@ const PgnInput = ({ onMoveChange }: PgnInputProps) => {
           >
             Clear
           </button>
+
+          <div>
+            <label
+              htmlFor="fileInput"
+              className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+            >
+              Open PGN
+            </label>
+            <input
+              type="file"
+              id="fileInput"
+              className="hidden"
+              onChange={handleFileChange}
+            />
+          </div>
         </div>
       </div>
       <DownloadModal

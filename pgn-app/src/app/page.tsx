@@ -12,10 +12,10 @@ export default function Home() {
   };
   return (
     <main className="flex w-full  min-h-screen flex-row justify-between p-12">
-      <div className="w-8/12 p-4  items-center justify-center">
+      <div className="w-9/12 p-4  items-center justify-center">
         <ChessBoard moves={currentMoves} />
       </div>
-      <div className="w-4/12 p-4">
+      <div className="w-3/12 p-4">
         <div className="bg-gray-300 p-4">
           <PgnInputComponent onMoveChange={handleOnChange}></PgnInputComponent>
         </div>

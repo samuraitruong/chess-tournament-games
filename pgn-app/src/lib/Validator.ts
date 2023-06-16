@@ -8,8 +8,8 @@ export function validateMove(validMoves: string[], move: string) {
   try {
     const m = game.move(move);
     console.log(m);
-    return true;
+    return m;
   } catch (err) {
-    return false;
+    return {};
   }
 }
