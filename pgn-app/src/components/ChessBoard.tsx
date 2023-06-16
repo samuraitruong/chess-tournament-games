@@ -18,7 +18,10 @@ export const ChessBoard = (props: ChessBoardProps) => {
     props.moves.forEach((move) => {
       try {
         newGame.move(move);
-      } catch (e) {}
+      } catch (e) {
+        // throw e;
+        console.log("error", move);
+      }
     });
 
     setGame(newGame);
@@ -32,7 +35,7 @@ export const ChessBoard = (props: ChessBoardProps) => {
 
   return (
     <div className="w-full ">
-      <Chessboard id="BasicBoard" boardWidth={900} position={fen} />
+      <Chessboard id="BasicBoard" boardWidth={800} position={fen} />
       <div className="mt-4">
         <ul className="space-x-2">
           {moveSteps.map((step, index) => (
