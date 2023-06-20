@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - pgn-app
-      - .github/workflows
+      - .github/workflows/deploy.yml
 env:
   NEXT_PUBLIC_BASE_PATH: "/chess-tournament-games"
   NEXT_PUBLIC_COMMIT_API_URL: "https://github-committer-api.fly.dev/commit"
