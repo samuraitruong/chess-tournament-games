@@ -1,0 +1,16 @@
+[Event "2023 Victorian Junior Chess Champions"]
+[Site "Glen Waverley Secondary College"]
+[Date "2023.06.24"]
+[Round "4"]
+[White "Jordan Ly"]
+[Black "Tuan Kiet Nguyen"]
+[Result "0-1"]
+[ECO "C65"]
+[WhiteElo "436"]
+[BlackElo "Unrated"]
+[TimeControl "30|2"]
+[EndTime "0:25:53 PDT"]
+[Termination "Tuan Kiet Nguyen won by checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. Nc3 Nf6 5. d3 O-O 6. Bxc6 bxc6 7. Nxe5 d5 8.
+Nxc6 Qd6 9. d4 Qxc6 10. dxc5 Qxc5 11. exd5 Ng4 12. O-O Qd6 13. h3 Qh2# 0-1
