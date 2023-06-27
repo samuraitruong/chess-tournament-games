@@ -1,0 +1,36 @@
+[Event "Hobsons Bay Cup Juniors"]
+[Site "108 Queen St, Altona, VIC"]
+[Date "2023.06.27"]
+[Round "3"]
+[White "Kiet Anh Nguyen"]
+[Black "Karthick, Deepshika"]
+[Result "1-0"]
+[CurrentPosition "Q7/1R6/8/8/8/8/6P1/k5K1 b - -"]
+[Timezone "UTC"]
+[ECO "C57"]
+[ECOUrl "https://www.chess.com/openings/Italian-Game-Fried-Liver-Attack-6...Kxf7-7.Qf3"]
+[UTCDate "2023.06.27"]
+[UTCTime "11:13:38"]
+[WhiteElo "Unrated"]
+[BlackElo "Unrated"]
+[TimeControl "30|15"]
+[Termination "Kiet Anh Nguyen won by checkmate"]
+[StartTime "11:13:38"]
+[EndDate "2023.06.27"]
+[EndTime "11:23:00"]
+[Link "https://www.chess.com/game/live/81603325757"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/169337083.54028726.50x50o.efba79e6430a.jpeg"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/55449522.f4cb0d1b.50x50o.c7fb06918f51.png"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 $3 Kxf7 7. Qf3+ Ke7
+8. Bxd5 Be6 9. Bxc6 bxc6 10. d3 Kd7 11. O-O Bd5 12. Qf5+ Kd6 13. Re1 Qe8 14. Nc3
+g6 15. Qf6+ Qe6 16. Qxh8 Re8 17. d4 c5 18. dxe5+ Kd7 19. Bg5 Qg4 20. Nxd5 Be7
+21. Bxe7 Rxh8 22. Nf6+ Kxe7 23. Nxg4 h5 24. Nf6 Rd8 25. Rad1 Rxd1 26. Rxd1 Ke6
+27. f4 Kf5 28. Rd7 a5 29. Rxc7 g5 30. fxg5 Kxg5 31. e6 Kxf6 32. e7 Kf7 33. Rxc5
+Kxe7 34. Rxh5 Kd6 35. Rxa5 Kc7 36. Rf5 Kd6 37. h4 Ke6 38. Rf1 Ke5 39. h5 Ke4 40.
+h6 Ke3 41. h7 Kd2 42. h8=Q Kxc2 43. Qd8 Kxb2 44. Rf7 Kxa2 45. Rb7 Ka1 46. Qa8#
+1-0

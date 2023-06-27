@@ -1,0 +1,32 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.06.27"]
+[Round "-"]
+[White "Tuan Kiet Nguyen"]
+[Black "Saha Arjun"]
+[Result "1-0"]
+[CurrentPosition "2kQRb1r/1p3pq1/p2P4/6p1/2B3bp/6B1/PPP2PPP/R5K1 b - -"]
+[Timezone "UTC"]
+[ECO "A40"]
+[ECOUrl "https://www.chess.com/openings/Englund-Gambit-2.dxe5-Nc6-3.Nf3-Qe7"]
+[UTCDate "2023.06.27"]
+[UTCTime "10:55:50"]
+[WhiteElo ""]
+[BlackElo ""]
+[TimeControl "30|15"]
+[Termination "Tuan Kiet Nguyen won by checkmate"]
+[StartTime "10:55:50"]
+[EndDate "2023.06.27"]
+[EndTime "11:01:38"]
+[Link "https://www.chess.com/game/live/81602145085"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/55449522.f4cb0d1b.50x50o.c7fb06918f51.png"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/169337083.54028726.50x50o.efba79e6430a.jpeg"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Nc3 Nxe5 5. e4 Nf6 6. Bf4 Nxf3+ 7. Qxf3 d6 8.
+Bd3 Bg4 9. Qe3 h6 10. O-O g5 11. Bg3 a6 12. Rfe1 O-O-O 13. Qd2 Nd7 14. Nd5 Qe6
+15. Bc4 Qg6 16. Qc3 Qg7 17. Qa5 Nb6 18. Nxb6+ cxb6 19. Qxb6 h5 20. e5 h4 21.
+exd6 Rd7 22. Re8+ Rd8 23. Qxd8# 1-0
