@@ -1,0 +1,45 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.06.20"]
+[Round "-"]
+[White "samuraitruong"]
+[Black "lqvinhh"]
+[Result "1-0"]
+[CurrentPosition "6Q1/5r2/8/K7/8/2P4p/6k1/8 b - -"]
+[Timezone "UTC"]
+[ECO "B70"]
+[ECOUrl "https://www.chess.com/openings/Sicilian-Defense-Open-Dragon-Variation"]
+[UTCDate "2023.06.20"]
+[UTCTime "11:52:40"]
+[WhiteElo "971"]
+[BlackElo "907"]
+[TimeControl "1800"]
+[Termination "samuraitruong won by resignation"]
+[StartTime "11:52:40"]
+[EndDate "2023.06.20"]
+[EndTime "12:01:23"]
+[Link "https://www.chess.com/game/live/81000813795"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/55449522.f4cb0d1b.50x50o.c7fb06918f51.png"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/216474961.15c6359f.50x50o.7b74342a9eb4.png"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Bb5+ Nbd7 7. Bf4 $6 e5 $6
+8. Bg5 exd4 9. Nd5 Be7 10. Qxd4 O-O $1 11. Bxd7
+(11. Nxe7+ Qxe7 12. Bxd7 Qxe4+ 13. Qxe4 Nxe4 14. Bxc8 Rfxc8 15. Be3) 11... Nxd5
+12. Bh6 $6 (12. Bh6 Bf6 13. Qxd5 Bxd7 14. O-O-O Re8) 12... Nf6 13. Bxf8 Bxd7 $6
+14. Bxe7 Qxe7 15. f3 $6 (15. f3 d5 16. e5 Re8 17. O-O-O Qxe5) 15... d5 16. O-O-O
+dxe4 17. fxe4 Nxe4 $2 18. Qxd7 $1 Qxd7 $6 19. Rxd7 b6 20. Rf1 f5 21. Rf4 Nf6 22.
+Rdd4 $6 Kf7 23. h3 Ke6 24. g4 Ke5 25. gxf5 $4 (25. gxf5 g5 26. Rg4 h5 27. Rxg5
+Kxd4) (25. gxf5 g5 26. Rg4 h5 27. Rxg5 Kxd4) 25... gxf5 26. c3 Rc8 27. Rf2 $6 Ne4
+28. Re2 Rc7 29. Kc2 $6 Kf6 $6 30. Rexe4 $6 fxe4 31. Rxe4 Kf5 32. Ra4 $6 Ke5 $6 33.
+b4 $2 Kf4 34. b5+ Kg3 35. h4 h5 36. Kb3 Kh3 37. Rd4 Rg7 38. a4 Rg4 $2 (38... Rg4 39.
+Rxg4 Kxg4) (38... Kg3 39. c4 Rf7 40. a5 Rc7 41. Kb4 Kh3 42. axb6 axb6 43. Rd6
+Rb7 44. Rxb6 Rxb6 45. c5 Rb8 46. c6 Kxh4 47. c7 Rc8 48. b6 Kh3 49. Kc3 h4 50.
+Kd3 Kg2 51. b7 Rxc7 52. b8=Q Rd7+ 53. Ke3 Re7+ 54. Kf4 Re2 55. Qb5 Rf2+ 56. Kg4
+h3 57. Qc6+ Kg1 58. Kxh3) 39. Rd7 Rxh4 40. Rxa7 Rf4 41. Rc7 Rf6 42. Ra7 Rf4 43.
+Rb7 Rf6 44. Kb4 h4 45. a5 bxa5+ 46. Kxa5 Kg2 47. b6 h3 48. Rg7+ Kf2 49. b7 Rf8
+50. Rf7+ $4 Rxf7 51. b8=Q Kg2 52. Qg8+ $1 {<br /><br />Game may have continued...}
+(52. Qg8+ Kh2 53. Qxf7 Kg1 54. Qg6+ Kf2 55. Qf5+ Kg2 56. Qg4+ {+19.5}) 1-0

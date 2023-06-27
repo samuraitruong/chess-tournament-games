@@ -1,0 +1,32 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.06.20"]
+[Round "-"]
+[White "lqvinhh"]
+[Black "samuraitruong"]
+[Result "0-1"]
+[CurrentPosition "r4rk1/ppp2pp1/7p/2b1p3/6P1/P2B4/1B2KqP1/R2R4 w - -"]
+[Timezone "UTC"]
+[ECO "C50"]
+[ECOUrl "https://www.chess.com/openings/Giuoco-Piano-Game-Four-Knights-Game-5.O-O"]
+[UTCDate "2023.06.20"]
+[UTCTime "12:16:40"]
+[WhiteElo "907"]
+[BlackElo "971"]
+[TimeControl "600"]
+[Termination "samuraitruong won by checkmate"]
+[StartTime "12:16:40"]
+[EndDate "2023.06.20"]
+[EndTime "12:20:41"]
+[Link "https://www.chess.com/game/live/81002484709"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/216474961.15c6359f.50x50o.7b74342a9eb4.png"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/55449522.f4cb0d1b.50x50o.c7fb06918f51.png"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+1. e4 e5 2. Nc3 Nf6 3. Bc4 Bc5 4. Nf3 Nc6 5. O-O O-O 6. d3 d6 7. a3 h6 8. d4 $2
+exd4 $1 9. Ne2 Nxe4 10. Bd3 Bf5 11. Ng3 Nxg3 $1 12. hxg3 Bg4 13. c3 $6 Ne5 $6 14.
+Nxe5 $2 Bxd1 $1 15. Rxd1 dxe5 16. f4 $6 dxc3+ 17. Kf1 Qf6 18. g4 $6 cxb2 19. Bxb2 $2
+Qxf4+ 20. Ke2 Qf2# 0-1
