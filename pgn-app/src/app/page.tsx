@@ -10,7 +10,7 @@ export default function Home() {
     setMoves([...moves]);
   };
   return (
-    <main className="flex w-full  min-h-screen flex-row justify-between p-6 p-md-2">
+    <main className="flex w-full min-h-screen flex-row justify-between p-6 p-md-2">
       <div className="w-8/12  items-center justify-center">
         <ChessBoard moves={currentMoves} />
       </div>

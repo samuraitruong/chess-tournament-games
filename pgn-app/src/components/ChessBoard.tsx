@@ -3,6 +3,7 @@ import { Chessboard } from "react-chessboard";
 import { Chess, Move } from "chess.js";
 import { useEffect, useState } from "react";
 import { copyToClipboard } from "@/lib/CopyToClipboard";
+import { useChessAnalysis } from "@/hooks/useChessAnalysis";
 
 export interface ChessBoardProps {
   moves: string[];
@@ -11,6 +12,7 @@ export const ChessBoard = (props: ChessBoardProps) => {
   const [game, setGame] = useState(new Chess());
   const [moveSteps, setMoveSteps] = useState<any[]>([]);
   const [fen, setFen] = useState("");
+  const moveAnalysis = useChessAnalysis(moveSteps);
 
   useEffect(() => {
     const newGame = new Chess();
@@ -32,13 +34,13 @@ export const ChessBoard = (props: ChessBoardProps) => {
   const stepClickHandle = (step: Move) => {
     setFen(step.after);
   };
-
+  console.log(moveAnalysis);
   return (
     <div className="w-full ">
       <Chessboard id="BasicBoard" boardWidth={800} position={fen} />
       <div className="mt-4">
         <ul className="space-x-2">
-          {moveSteps.map((step, index) => (
+          {moveAnalysis.map((step, index) => (
             <li key={index} className="inline-block">
               {index % 2 === 0 ? `${Math.floor((index + 1) / 2 + 1)}. ` : ""}
               <span
