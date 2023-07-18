@@ -1,0 +1,17 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.07.11"]
+[Round "?"]
+[White "tuankiet2707"]
+[Black "samuraitruong"]
+[Result "1-0"]
+[ECO "C45"]
+[WhiteElo "1098"]
+[BlackElo "1097"]
+[TimeControl "600"]
+[EndTime "2:15:51 PDT"]
+[Termination "tuankiet2707 won by checkmate"]
+
+1. e4 e5 2. d4 d6 3. Nf3 Nc6 4. d5 Nb8 5. Bd3 c6 6. O-O Nf6 7. Be3 Be7 8. dxc6
+Nxc6 9. Nc3 Bg4 10. h3 Bxf3 11. Qxf3 O-O 12. Nd5 Nd4 13. Nxf6+ Bxf6 14. Bxd4
+exd4 15. Qh5 Re8 16. e5 Bxe5 17. Qxh7+ Kf8 18. Rfe1 b6 19. f4 Bf6 20. Qh8# 1-0
