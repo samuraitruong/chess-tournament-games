@@ -1,0 +1,35 @@
+[Event "Hobsons Bay Koshnitsky Cup Seniors"]
+[Site "108 Queen Street Altona"]
+[Date "2023.08.08"]
+[Round "2"]
+[White "Kiet Anh Nguyen"]
+[Black "Khushal Lingineni"]
+[Result "1-0"]
+[CurrentPosition "r7/pp4R1/6kp/q4p1b/3B4/P1P5/5PPP/2R3K1 b - -"]
+[Timezone "UTC"]
+[ECO "C00"]
+[ECOUrl "https://www.chess.com/openings/French-Defense-Schlechter-Variation...4.Bxe4-Nf6-5.Bf3-c5"]
+[UTCDate "2023.08.15"]
+[UTCTime "11:24:29"]
+[WhiteElo "1106"]
+[BlackElo "1203"]
+[TimeControl "1h30|30"]
+[Termination "Kiet Anh Nguyen won by checkmate"]
+[StartTime "11:24:29"]
+[EndDate "2023.08.15"]
+[EndTime "11:29:12"]
+[Link "https://www.chess.com/game/live/85837771901"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/169337083.54028726.50x50o.efba79e6430a.jpeg"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/55449522.f4cb0d1b.50x50o.c7fb06918f51.png"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+
+1. e4 e6 2. d4 d5 3. Bd3 dxe4 4. Bxe4 Nf6 5. Bf3 c5 6. c3 cxd4 7. cxd4 Nc6 8.
+Be3 Nd5 9. Bxd5 Qxd5 10. Nf3 Bb4+ 11. Nc3 O-O 12. O-O Qa5 13. Bd2 Rd8 14. a3 Be7
+15. Be3 Bf6 16. Ne4 Be7 17. Rc1 f5 18. Nc3 Bf6 19. Qd3 e5 20. Qc4+ Kh8 21. dxe5
+Nxe5 22. Nxe5 Bxe5 23. Rfd1 Bd7 24. Bg5 Rdc8 25. Qf7 Be8 26. Qe6 Bxc3 27. bxc3
+Bg6 28. Qd6 Bf7 29. Qe7 Bh5 30. Rd7 Rg8 31. Bf6 h6 32. Bxg7+ Kh7 33. Bd4+ Kg6
+34. Qg7+ Rxg7 35. Rxg7# 1-0
