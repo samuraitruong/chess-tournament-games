@@ -1,0 +1,37 @@
+[Event "Hobsons Bay Koshnitsky Cup juniors"]
+[Site "108 Queen Street Altona"]
+[Date "2023.09.05"]
+[Round "5"]
+[White "Rohan Majesty"]
+[Black "Anh Kiet Nguyen"]
+[Result "0-1"]
+[CurrentPosition "8/5pp1/7p/6k1/6r1/8/4p3/7K b - -"]
+[Timezone "UTC"]
+[ECO "D00"]
+[ECOUrl "https://www.chess.com/openings/Queens-Pawn-Opening-Chigorin-Variation...4.f3-e6-5.g4-Bg6-6.h4"]
+[UTCDate "2023.09.05"]
+[UTCTime "09:50:27"]
+[WhiteElo "1176"]
+[BlackElo "1262"]
+[TimeControl "600"]
+[Termination "Kiet Anh Nguyen won by resignation"]
+[StartTime "09:50:27"]
+[EndDate "2023.09.05"]
+[EndTime "09:58:10"]
+[Link "https://www.chess.com/game/live/87646325947"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/55449522.f4cb0d1b.50x50o.c7fb06918f51.png"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/243921949.1502f415.50x50o.8a9be32c9f8f.png"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+1. d4 Nf6 2. Nc3 d5 3. Bf4 Bf5 4. f3 e6 5. g4 Bg6 6. h4 h6 7. e3 c5 $6 8. Bb5+ $2
+Nc6 9. Bd3 Bxd3 10. Qxd3 Qb6 11. b3 $2 cxd4 12. exd4 Qxd4 13. Nge2 $6 Qxd3 14. cxd3
+Bb4 15. Kd2 $4 d4 $1 16. a3 Bxc3+ 17. Nxc3 dxc3+ 18. Kd1 Nd5 19. Bc1 Nd4 20. Ra2
+Rc8 21. Rf1 Nxb3 22. Ke2 c2 23. Rb2 Nxc1+ 24. Rxc1 Ke7 25. Rxb7+ Kf6 26. d4 Rhd8
+27. Kd3 Nf4+ 28. Ke3 Ng2+ 29. Kd2 $6 Nxh4 $6 30. Rxa7 Rxd4+ 31. Ke2 Nxf3 32. Rb7
+Rd2+ 33. Kxf3 Rd1 34. Rxc2 Rxc2 35. a4 Ra2 36. Ra7 $2 Rda1 $9 37. Ke3 Rxa4 38.
+Rxa4 $6 Rxa4 39. Kf3 Kg5 40. Kg3 Rxg4+ 41. Kh3 e5 42. Kh2 e4 43. Kh3 e3 44. Kh2
+e2 45. Kh1 {<br /><br />Game may have continued...} (45. Kh1 e1=Q+ 46. Kh2 Qh4#
+{-M1}) 0-1
