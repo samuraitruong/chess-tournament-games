@@ -1,0 +1,32 @@
+[Event "Hobsons Bay Junior Club Championship"]
+[Site "108 Queen Street Altona"]
+[Date "2023.10.10"]
+[Round "1"]
+[White "Tuan Kiet Nguyen"]
+[Black "Lamiah Husain"]
+[Result "1-0"]
+[CurrentPosition "r1b2Q2/ppp4p/6pk/2n5/4NPq1/1B4N1/PP4PP/R3R1K1 b - -"]
+[Timezone "UTC"]
+[ECO "C44"]
+[ECOUrl "https://www.chess.com/openings/Ponziani-Opening-Jaenisch-Counterattack-4.d4-exd4-5.e5-Nd5-6.cxd4"]
+[UTCDate "2023.10.10"]
+[UTCTime "08:10:21"]
+[WhiteElo ""]
+[BlackElo ""]
+[TimeControl "1800|3"]
+[Termination "Tuan Kiet Nguyen won by checkmate"]
+[StartTime "08:10:21"]
+[EndDate "2023.10.10"]
+[EndTime "08:14:05"]
+[Link "https://www.chess.com/game/live/90664213657"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/243921949.1502f415.50x50o.8a9be32c9f8f.png"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/55449522.f4cb0d1b.50x50o.c7fb06918f51.png"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+1. e4 e5 2. Nf3 Nc6 3. c3 Nf6 4. d4 exd4 5. e5 Nd5 6. cxd4 Bb4+ 7. Bd2 Qe7 $6 8.
+Bc4 Nb6 9. Bb3 Nxd4 $4 10. Nxd4 Qxe5+ 11. Ne2 O-O $2 12. Bxb4 d5 13. Bxf8 Kxf8 14.
+O-O Nd7 15. Qxd5 Qe7 16. Nbc3 g6 17. Rfe1 Nb6 18. Qe4 Qg5 19. Ng3 Nd7 $6 20. Qe8+
+Kg7 21. Qxf7+ Kh6 22. f4 Qg4 23. Nce4 Nc5 $6 24. Qf8# 1-0
