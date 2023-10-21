@@ -1,0 +1,35 @@
+[Event "Hobsons Bay Junior Club Championship"]
+[Site "108 Queen Street Altona"]
+[Date "2023.10.17"]
+[Round "2"]
+[White "Emir Pathiyassery"]
+[Black "Kiet Anh Nguyen"]
+[Result "0-1"]
+[CurrentPosition "8/8/7p/p2ppkp1/P1p5/1P3K2/8/8 w - -"]
+[Timezone "UTC"]
+[ECO "C50"]
+[ECOUrl "https://www.chess.com/openings/Giuoco-Piano-Game-4.O-O-Nf6"]
+[UTCDate "2023.10.17"]
+[UTCTime "09:59:21"]
+[WhiteElo ""]
+[BlackElo ""]
+[TimeControl "1800"]
+[Termination "Kiet Anh Nguyen won by checkmate"]
+[StartTime "09:59:21"]
+[EndDate "2023.10.17"]
+[EndTime "10:07:08"]
+[Link "https://www.chess.com/game/live/91275605735"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/55449522.f4cb0d1b.50x50o.c7fb06918f51.png"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/243921949.1502f415.50x50o.8a9be32c9f8f.png"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. Re1 d6 6. Nc3 h6 7. h3 O-O 8. d3
+Be6 9. Bb3 Qd7 10. Be3 Bxe3 11. Rxe3 Ne7 12. Bxe6 fxe6 13. d4 exd4 14. Qxd4 e5
+15. Qd2 Ng6 16. Nd5 c6 17. Nxf6+ Rxf6 18. Ree1 Rxf3 19. gxf3 Qxh3 20. f4
+Nxf4 21. f3 Qg3+ 22. Kh1 Rf8 23. Rg1 Qxf3+ 24. Rg2 Qxe4 25. Re1 Qxg2+ 26.
+Qxg2 Nxg2 27. Kxg2 Rf4 28. Rd1 d5 29. Rd3 Kf7 30. Rb3 b6 31. Ra3 a5 32. Rb3 b5
+33. Rc3 Rc4 34. Rxc4 bxc4 35. Kf3 Ke6 36. Ke3 g5 37. b3 cxb3 38. cxb3 c5 39.
+a4 Kf5 40. Kf3 e4+ 41. Ke2 Kf4 42. b4 cxb4 43. Kd1 e3 44. Ke2 b3 45. Kd3 e2 46. Kxe2 b2 47. Kd2 b1=Q 48. Ke2 Qc2+ 49. Kf1 Kf3 50. Kg1 Qg2#
