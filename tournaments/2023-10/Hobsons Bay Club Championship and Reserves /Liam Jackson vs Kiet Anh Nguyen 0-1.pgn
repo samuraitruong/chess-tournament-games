@@ -1,0 +1,41 @@
+[Event "Hobsons Bay Club Championship and Reserves "]
+[Site "108 Queen St, Altona"]
+[Date 2023.10.24]
+[Round "3"]
+[White "Liam Jackson"]
+[Black "Kiet Anh Nguyen"]
+[Result "0-1"]
+[CurrentPosition "1K6/1q5p/8/6p1/8/8/8/1r3k2 w - -"]
+[Timezone "UTC"]
+[ECO "C78"]
+[ECOUrl "https://www.chess.com/openings/Ruy-Lopez-Opening-Morphy-Defense-Columbus-Variation...6.Bb3-Bc5-7.Nc3-d6"]
+[UTCDate "2023.10.26"]
+[UTCTime "07:13:42"]
+[WhiteElo "1306"]
+[BlackElo "1734"]
+[TimeControl "1800"]
+[Termination "Kiet Anh Nguyen won by checkmate"]
+[StartTime "07:13:42"]
+[EndDate "2023.10.26"]
+[EndTime "07:26:59"]
+[Link "https://www.chess.com/game/live/92043517755"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/243921949.1502f415.50x50o.8a9be32c9f8f.png"]
+[WhiteCountry "17"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/169337083.54028726.50x50o.efba79e6430a.jpeg"]
+[BlackCountry "17"]
+[BlackTitle ""]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Nc3 b5 6. Bb3 Bc5 7. O-O d6 8. d3
+Bg4 9. h3 Bh5 10. Nd5 Nd4 11. g4 Bg6 $2 12. c3 $9 Nxb3 13. Qxb3 O-O $2 14. Bg5 $1 Re8
+15. h4 $2 Qd7 16. Nh2 Nxg4 17. Nxg4 $6 Qxg4+ 18. Kh2 Rac8 $2 19. Rg1 Qf3 20. Be3 $2
+Bxe3 21. fxe3 c6 22. Nb6 Rb8 23. Nd7 Rb7 24. Qd1 Qxe3 25. Qg4 Qxd3 $9 26. Rad1
+Qxe4 $4 27. Qxe4 $9 Bxe4 28. Nf6+ Kf8 $1 29. Nxe4 $1 d5 $4 30. Nd6 $1 Rbe7 $6 31. Nxe8
+Rxe8 32. Rg2 $6 f5 33. Rdg1 $6 Re7 $2 34. Rg5 f4 $6 35. h5 $6 c5 $2 36. h6 g6 37. Rd1 $6
+d4 38. Kg2 $2 Kf7 $1 39. Kf3 Kf6 $1 40. Rdg1 a5 $2 41. Ke4 a4 42. Kd5 $2 d3 $9 43. Kxc5 $9
+d2 $9 44. R5g2 $1 Rd7 45. Rd1 $1 e4 46. Rgxd2 Re7 $2 47. Kd4 $9 Kf5 $9 48. Re1 $4 Rd7+ $1
+49. Kc5 Rxd2 50. Kxb5 Rxb2+ 51. Kxa4 Rxa2+ 52. Kb3 Rh2 53. c4 Rxh6 54. c5 g5 55.
+Rc1 Rc6 56. Kb4 e3 57. Kb5 Rc8 58. Kb6 Kg4 59. Kb7 Re8 60. c6 e2 61. c7 f3 62.
+c8=Q+ Rxc8 63. Kxc8 f2 64. Rc4+ Kf3 65. Rc3+ Kg2 66. Rc7 f1=Q 67. Kb8 Qf4 68.
+Ka8 Qa4+ 69. Kb8 Qb5+ 70. Ka8 Qa6+ 71. Kb8 e1=R 72. Rc2+ Kf1 73. Rc7 Rb1+ 74.
+Rb7 Qxb7# 0-1
