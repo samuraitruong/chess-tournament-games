@@ -1,0 +1,20 @@
+[Event "2024 Begonia Open"]
+[Site "Ballarat Tech School"]
+[Date "2024.03.09"]
+[Round "2"]
+[White "Nguyen,Anh Kiet"]
+[Black "Ilic,Goran"]
+[Result "1-0"]
+[WhiteElo "1573"]
+[WhiteUrl ""]
+[WhiteCountry "AU"]
+[WhiteTitle ""]
+[BlackElo "1753"]
+[TimeControl "90|30"]
+
+1. e4 c5 2. c3 Nc6 3. d4 cxd4 4. cxd4 d5 5. exd5 Qxd5 6. Be3 e6 7. Nc3 Bb4 8.
+Nf3 Nf6 9. Bd3 O-O 10. O-O Bxc3 11. bxc3 e5 12. dxe5 Nxe5 13. Nxe5 Qxe5 14. Bd4
+Qg5 15. Qc2 $2 h5 16. Rab1 Bd7 17. Rxb7 Bc6 18. f4 $1 Qh4 $4 19. Rc7 $1 (19. Rc7 Rfc8
+20. Rxc8+ Rxc8 21. g3 Qh3 22. Bf5 Qxf1+ 23. Kxf1 Re8 24. Bxf6 gxf6) 19... Rfc8
+20. Rxc8+ Rxc8 21. g3 Qh3 22. Bf5 Ba4 23. Bxh3 {Game may have continued...} (23.
+Bxh3 Bxc2 24. Bxc8 Be4 25. Re1 Bd5 26. a3 Bc6 27. Bh3 {+6.32}) 1-0
