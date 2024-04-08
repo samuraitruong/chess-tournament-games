@@ -1,0 +1,41 @@
+[Event "2024 Melbourne International Open - Open"]
+[Site "Melbourne Chess Club"]
+[Date "2024.04.07"]
+[Round "9"]
+[White "Nguyen, Anh Kiet"]
+[Black " Zhang, Daniel"]
+[Result "1-0"]
+[WhiteElo "1596"]
+[BlackElo "1716"]
+[WhiteUrl ""]
+[WhiteCountry "AU"]
+[WhiteTitle ""]
+[TimeControl "90m+30"]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ gxf6 6. Bf4 e5 {[%c_effect
+e5;square;e5;type;Inaccuracy;path;null;size;100%2525;persistent;true]} 7. dxe5
+Qa5+ 8. Qd2 {[%c_effect d2;square;d2;type;Inaccuracy;persistent;true]} (8. c3
+Be6 9. Nf3 Nd7) 8... Qxd2+ {[%c_effect
+d2;square;d2;type;GreatFind;path;null;size;100%25;persistent;true]} 9. Kxd2 fxe5
+10. Bxe5 Bh6+ 11. f4 O-O 12. g3 {[%c_effect
+g3;square;g3;type;Inaccuracy;persistent;true]} (12. Bd3) (12. Re1) 12... Be6 13.
+Nf3 Nd7 14. Bc3 Nc5 15. Bd3 Rad8 16. Nd4 Nxd3 {[%c_effect
+d3;square;d3;type;Mistake;path;null;size;100%25;persistent;true]} 17. cxd3
+{[%c_effect d3;square;d3;type;Miss;path;null;size;100%25;persistent;true]} (17.
+Kxd3) (17. Nxe6 Nxf4+ {[%c_effect
+f4;square;f4;type;Mistake;path;null;size;100%25;persistent;true]} 18. Nxd8 Rxd8+
+19. Ke1) 17... Bd7 18. Bb4 Rfe8 19. Rae1 Rxe1 20. Rxe1 b6 {[%c_effect
+b6;square;b6;type;Inaccuracy;path;null;size;100%25;persistent;true]} 21. Be7 Rc8
+22. Bd6 {[%c_effect
+d6;square;d6;type;Mistake;path;null;size;100%25;persistent;true]} (22. Bd6 Bg7
+23. Nc2 Bh3 24. b4 h5 25. Ne3 Be6) (22. b3) (22. Bf6 Bf8) 22... c5 {[%c_effect
+c5;square;c5;type;Miss;path;null;size;100%25;persistent;true]} 23. Re7 Bg4
+{[%c_effect g4;square;g4;type;Inaccuracy;path;null;size;100%25;persistent;true]}
+24. Nb5 a6 25. Nc7 Bg7 26. b3 Bd4 27. Nd5 {[%c_effect
+d5;square;d5;type;Mistake;path;null;size;100%25;persistent;true]} (27. Re8+)
+27... Be6 {[%c_effect
+e6;square;e6;type;Blunder;path;null;size;100%25;persistent;true]} 28. Rxe6
+{[%c_effect e6;square;e6;type;Brilliant;path;null;size;100%25;persistent;true]}
+28... fxe6 29. Ne7+ {[%c_effect
+e7;square;e7;type;GreatFind;path;null;size;100%25;persistent;true]} 29... Kf7
+30. Nxc8 Bg1 31. h3 Ke8 32. Nxb6 1-0
