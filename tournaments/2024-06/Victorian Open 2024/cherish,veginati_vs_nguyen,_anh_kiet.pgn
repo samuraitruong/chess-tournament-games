@@ -1,0 +1,19 @@
+[Event "Victorian open chess 2024"]
+[Site "Melbourne Chess Club"]
+[Date "2024.06.10"]
+[Round "7"]
+[White "Cherish Veginati"]
+[Black "kiet anh nguyen"]
+[Result "0-1"]
+[WhiteElo "1453"]
+[WhiteUrl ""]
+[WhiteCountry "AU"]
+[WhiteTitle ""]
+[TimeControl "90min + 30sec"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. Be3 Bb6 7. a4 Be6 8. Bb3
+O-O 9. Nbd2 d5 10. Bg5 d4 11. cxd4 Bxb3 12. Nxb3 exd4 13. O-O Qd6 14. a5 Bc5 15.
+Nxc5 Qxc5 16. Bxf6 gxf6 17. Nh4 Ne7 18. f4 Kh8 19. Qg4 Rg8 20. Qh3 Rg7 21. e5
+fxe5 22. f5 Rgg8 23. f6 Ng6 24. Nf3 Nf4 25. Qh4 Qc2 26. Rf2 Rxg2+ 27. Kf1 Qxd3+
+28. Ke1 Qe3+ 29. Kf1 Rag8 30. Qxf4 Qxf2# {[%c_effect
+h8;square;h8;type;Winner,f1;square;f1;type;CheckmateWhite]} 0-1
